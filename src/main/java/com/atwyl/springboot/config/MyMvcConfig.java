@@ -30,11 +30,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public WebMvcConfigurer webMvcConfigurationSupport(){
         WebMvcConfigurer support = new WebMvcConfigurer(){
 
-            @Override
-            public void addViewControllers(ViewControllerRegistry registry) {
-                registry.addViewController("/").setViewName("login");
-                registry.addViewController("/index.html").setViewName("login");
-            }
+
 
             //注册拦截器
             @Override
@@ -43,6 +39,13 @@ public class MyMvcConfig implements WebMvcConfigurer {
                 registry.addInterceptor(new LoginHandlerIntercepter()).addPathPatterns("/**")
                         .excludePathPatterns("/index","/user/login","/index.html");
 
+            }
+
+            @Override
+            public void addViewControllers(ViewControllerRegistry registry) {
+                registry.addViewController("/").setViewName("login");
+                registry.addViewController("/index.html").setViewName("login");
+                registry.addViewController("/main.html").setViewName("dashboard");
             }
 
         };
