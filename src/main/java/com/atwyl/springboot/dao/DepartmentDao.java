@@ -1,12 +1,14 @@
 package com.atwyl.springboot.dao;
 
 import com.atwyl.springboot.entity.Department;
+import org.springframework.stereotype.Repository;
 
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Repository
 public class DepartmentDao {
 
     private static Map<Integer,Department> departments = null;
