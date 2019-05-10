@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started
 
 ### Reference Documentation
@@ -25,3 +26,7 @@ The following guides illustrate how to use some features concretely:
   @Repository用于标注数据访问组件，即DAO组件
   
   @Component泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。  
+=======
+# Test
+测试上传项目
+>>>>>>> 7a4732078bd0f377ac419b18fd9d36accec4bfa3
