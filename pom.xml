@@ -26,7 +26,10 @@
     </properties>
 
     <dependencies>
+<<<<<<< HEAD
         <!--引入web模块，就是自动默认使用tomcat-->
+=======
+>>>>>>> ae5ba4ad023d15506d340daf6f8ffd819ac3a426
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
