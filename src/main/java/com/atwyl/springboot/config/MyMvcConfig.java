@@ -3,6 +3,7 @@ package com.atwyl.springboot.config;
 
 import com.atwyl.springboot.component.LoginHandlerIntercepter;
 import com.atwyl.springboot.component.MyLocaleResolver;
+import org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -24,6 +25,8 @@ import org.springframework.web.servlet.config.annotation.*;
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 
+    //编码的方式设置tomcat的端口号
+//    public EmbeddedWebServerFactoryCustomizerAutoConfiguration
 
     //所有的WebMvcConfigurationSupport组件都会一起起作用
     @Bean    //将组件注册在容器中
